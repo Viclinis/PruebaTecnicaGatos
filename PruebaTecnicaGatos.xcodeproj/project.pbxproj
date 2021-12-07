@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		571A5E7B275A5F7D00378231 /* PruebaTecnicaGatosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A5E7A275A5F7D00378231 /* PruebaTecnicaGatosApp.swift */; };
+		571A5E7D275A5F7D00378231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A5E7C275A5F7D00378231 /* ContentView.swift */; };
+		571A5E7F275A5F8700378231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571A5E7E275A5F8700378231 /* Assets.xcassets */; };
+		571A5E82275A5F8700378231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571A5E81275A5F8700378231 /* Preview Assets.xcassets */; };
+		571A5E8C275A616E00378231 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A5E8B275A616E00378231 /* Breed.swift */; };
+		571A5E8E275A82C100378231 /* BreedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A5E8D275A82C000378231 /* BreedImage.swift */; };
+		571A5E90275A84BE00378231 /* BreedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A5E8F275A84BE00378231 /* BreedFetcher.swift */; };
+		5787813B275FC96800A4CEBE /* BreedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787813A275FC96700A4CEBE /* BreedListView.swift */; };
+		5787813D275FCC4300A4CEBE /* BreedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787813C275FCC4200A4CEBE /* BreedRow.swift */; };
+		5787813F275FDFA400A4CEBE /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787813E275FDFA400A4CEBE /* BreedDetailView.swift */; };
+		57878141275FE6B500A4CEBE /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57878140275FE6B500A4CEBE /* ErrorView.swift */; };
+		57878143275FEDB300A4CEBE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57878142275FEDB300A4CEBE /* LoadingView.swift */; };
+		57878145275FEED700A4CEBE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57878144275FEED700A4CEBE /* APIService.swift */; };
+		57878147275FF4E800A4CEBE /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57878146275FF4E800A4CEBE /* APIServiceProtocol.swift */; };
+		57878149275FF51900A4CEBE /* APIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57878148275FF51900A4CEBE /* APIMockService.swift */; };
+		5787814B275FF54900A4CEBE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5787814A275FF54900A4CEBE /* APIError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		571A5E77275A5F7D00378231 /* PruebaTecnicaGatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaTecnicaGatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		571A5E7A275A5F7D00378231 /* PruebaTecnicaGatosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaTecnicaGatosApp.swift; sourceTree = "<group>"; };
+		571A5E7C275A5F7D00378231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		571A5E7E275A5F8700378231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		571A5E81275A5F8700378231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		571A5E8B275A616E00378231 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		571A5E8D275A82C000378231 /* BreedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImage.swift; sourceTree = "<group>"; };
+		571A5E8F275A84BE00378231 /* BreedFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedFetcher.swift; sourceTree = "<group>"; };
+		5787813A275FC96700A4CEBE /* BreedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListView.swift; sourceTree = "<group>"; };
+		5787813C275FCC4200A4CEBE /* BreedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedRow.swift; sourceTree = "<group>"; };
+		5787813E275FDFA400A4CEBE /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
+		57878140275FE6B500A4CEBE /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		57878142275FEDB300A4CEBE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		57878144275FEED700A4CEBE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		57878146275FF4E800A4CEBE /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		57878148275FF51900A4CEBE /* APIMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMockService.swift; sourceTree = "<group>"; };
+		5787814A275FF54900A4CEBE /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		571A5E74275A5F7D00378231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		571A5E6E275A5F7D00378231 = {
+			isa = PBXGroup;
+			children = (
+				571A5E79275A5F7D00378231 /* PruebaTecnicaGatos */,
+				571A5E78275A5F7D00378231 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		571A5E78275A5F7D00378231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				571A5E77275A5F7D00378231 /* PruebaTecnicaGatos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		571A5E79275A5F7D00378231 /* PruebaTecnicaGatos */ = {
+			isa = PBXGroup;
+			children = (
+				571A5E8A275A60A300378231 /* networking */,
+				571A5E89275A609000378231 /* model */,
+				571A5E88275A608900378231 /* view */,
+				571A5E7A275A5F7D00378231 /* PruebaTecnicaGatosApp.swift */,
+				571A5E7C275A5F7D00378231 /* ContentView.swift */,
+				571A5E7E275A5F8700378231 /* Assets.xcassets */,
+				571A5E80275A5F8700378231 /* Preview Content */,
+			);
+			path = PruebaTecnicaGatos;
+			sourceTree = "<group>";
+		};
+		571A5E80275A5F8700378231 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				571A5E81275A5F8700378231 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		571A5E88275A608900378231 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5787813A275FC96700A4CEBE /* BreedListView.swift */,
+				5787813C275FCC4200A4CEBE /* BreedRow.swift */,
+				5787813E275FDFA400A4CEBE /* BreedDetailView.swift */,
+				57878140275FE6B500A4CEBE /* ErrorView.swift */,
+				57878142275FEDB300A4CEBE /* LoadingView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		571A5E89275A609000378231 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				571A5E8B275A616E00378231 /* Breed.swift */,
+				571A5E8D275A82C000378231 /* BreedImage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		571A5E8A275A60A300378231 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				571A5E8F275A84BE00378231 /* BreedFetcher.swift */,
+				57878144275FEED700A4CEBE /* APIService.swift */,
+				57878146275FF4E800A4CEBE /* APIServiceProtocol.swift */,
+				57878148275FF51900A4CEBE /* APIMockService.swift */,
+				5787814A275FF54900A4CEBE /* APIError.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		571A5E76275A5F7D00378231 /* PruebaTecnicaGatos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571A5E85275A5F8700378231 /* Build configuration list for PBXNativeTarget "PruebaTecnicaGatos" */;
+			buildPhases = (
+				571A5E73275A5F7D00378231 /* Sources */,
+				571A5E74275A5F7D00378231 /* Frameworks */,
+				571A5E75275A5F7D00378231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PruebaTecnicaGatos;
+			productName = PruebaTecnicaGatos;
+			productReference = 571A5E77275A5F7D00378231 /* PruebaTecnicaGatos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		571A5E6F275A5F7D00378231 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					571A5E76275A5F7D00378231 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 571A5E72275A5F7D00378231 /* Build configuration list for PBXProject "PruebaTecnicaGatos" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 571A5E6E275A5F7D00378231;
+			productRefGroup = 571A5E78275A5F7D00378231 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				571A5E76275A5F7D00378231 /* PruebaTecnicaGatos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		571A5E75275A5F7D00378231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571A5E82275A5F8700378231 /* Preview Assets.xcassets in Resources */,
+				571A5E7F275A5F8700378231 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		571A5E73275A5F7D00378231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57878147275FF4E800A4CEBE /* APIServiceProtocol.swift in Sources */,
+				5787813F275FDFA400A4CEBE /* BreedDetailView.swift in Sources */,
+				571A5E8E275A82C100378231 /* BreedImage.swift in Sources */,
+				571A5E8C275A616E00378231 /* Breed.swift in Sources */,
+				57878143275FEDB300A4CEBE /* LoadingView.swift in Sources */,
+				57878145275FEED700A4CEBE /* APIService.swift in Sources */,
+				5787813D275FCC4300A4CEBE /* BreedRow.swift in Sources */,
+				57878149275FF51900A4CEBE /* APIMockService.swift in Sources */,
+				571A5E7D275A5F7D00378231 /* ContentView.swift in Sources */,
+				571A5E90275A84BE00378231 /* BreedFetcher.swift in Sources */,
+				571A5E7B275A5F7D00378231 /* PruebaTecnicaGatosApp.swift in Sources */,
+				57878141275FE6B500A4CEBE /* ErrorView.swift in Sources */,
+				5787813B275FC96800A4CEBE /* BreedListView.swift in Sources */,
+				5787814B275FF54900A4CEBE /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		571A5E83275A5F8700378231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		571A5E84275A5F8700378231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		571A5E86275A5F8700378231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PruebaTecnicaGatos/Preview Content\"";
+				DEVELOPMENT_TEAM = H4KG989WFJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = victor.PruebaTecnicaGatos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		571A5E87275A5F8700378231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PruebaTecnicaGatos/Preview Content\"";
+				DEVELOPMENT_TEAM = H4KG989WFJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = victor.PruebaTecnicaGatos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		571A5E72275A5F7D00378231 /* Build configuration list for PBXProject "PruebaTecnicaGatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571A5E83275A5F8700378231 /* Debug */,
+				571A5E84275A5F8700378231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571A5E85275A5F8700378231 /* Build configuration list for PBXNativeTarget "PruebaTecnicaGatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571A5E86275A5F8700378231 /* Debug */,
+				571A5E87275A5F8700378231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 571A5E6F275A5F7D00378231 /* Project object */;
+}
